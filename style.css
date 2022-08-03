@@ -1,44 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Maven Pro', sans-serif;
+}
+
+section {
+    /* background-color: rgba(181, 32, 32, 0.418); */
+    background-color: rgba(181, 32, 32, 0.556);
+    /* background-color: rgba(6, 115, 91, 0.759); */
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .container {
+    width: 90%;
     max-width: 400px;
-    margin: 10vh auto 0 auto;
-    box-shadow: 0px 0px 43px 17px rgba(153, 153, 153, 1);
+    background-color: rgba(255, 255, 255, 0.61);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 #display {
+    background-color: rgb(182, 182, 182);
+    height: 100px;
+    width: 100%;
     text-align: right;
-    height: 70px;
-    line-height: 70px;
-    padding: 16px 8px;
-    font-size: 25px;
+    padding: 20px;
+    font-size: 32px;
 }
 
 .buttons {
+    color: #323330;
     display: grid;
-    border-bottom: 1px solid #999;
-    border-left: 1px solid #999;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.buttons>div {
-    border-top: 1px solid #999;
-    border-right: 1px solid #999;
+    grid-template: repeat(4, 1fr)/repeat(4, 1fr);
 }
 
 .button {
-    border: 0.5px solid #999;
-    line-height: 100px;
-    text-align: center;
-    font-size: 25px;
+    border: .5px solid rgba(92, 92, 92, 0.137);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
     cursor: pointer;
 }
 
-#equal {
-    background-color: cadetblue;
-    color: white;
+#del:hover {
+    color: red;
+}
+
+#equal:hover {
+    color: green;
 }
 
 .button:hover {
     background-color: #323330;
     color: white;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-0 {
+    grid-column: 1/3;
 }
